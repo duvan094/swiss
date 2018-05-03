@@ -27,7 +27,13 @@ container.style.left = document.getElementById("recursive-container").children[0
 container.style.transform = "translate(0,"+ document.getElementById("recursive-container").children[0].offsetHeight/2 + "px";
 
 
-document.getElementById("recursive-wrapper").style.height = document.getElementById("recursive-container").children[0].offsetWidth + "px";
+// Chrome 1+
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+if(isChrome){
+  document.getElementById("recursive-wrapper").style.height = document.getElementById("recursive-container").children[0].offsetWidth + "px";
+}else{
+  document.getElementById("recursive-wrapper").style.height = document.getElementById("recursive-container").children[0].offsetWidth + document.getElementById("recursive-container").children[0].offsetHeight/2 + "px";
+}
 
 document.getElementById("recursive-wrapper").style.width = document.getElementById("recursive-container").children[0].offsetWidth + "px";
 
