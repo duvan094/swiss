@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900');
+
+*{
+  font-family: 'Gothic A1', sans-serif;
+  margin:0;
+}
+
+body{
+  padding:0;
+  margin:0;
+  background:#000;
+}
+
+.poster{
+  background:#272320;
+  width:100%;
+  position:relative;
+  padding:44px 66px;
+  box-sizing:border-box;
+  width:720px;
+  margin:auto;
+}
+
+.top-container{
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+}
+
+.top-container .column{
+  color:#FFF;
+  width:200px;
+}
+
+.top-container p{
+  font-weight:300;
+}
+
+#recursive-wrapper{
+  position:absolute;
+  bottom:44px;
+}
+
+#recursive-container{
+  position:absolute;
+}
+
+.recursive-title{
+  color:#983D7B;
+  font-size:110px;
+  font-weight:900;
+  position:absolute;
+  top:0;
+  transform:rotate(0deg);
+  white-space: nowrap;
+  display:block;
+  transition:transform 0.5s ease-in-out;
+}
+
+#recursive-container.initial .recursive-title{
+  transform:rotate(0deg) translate(-50%,-50%) !important;
+}
+
+.top-color{
+  color:#b34891;
+  z-index:1;
+}
