@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900');
 
+/* Mozilla based browsers */
+::-moz-selection {
+       background-color: #983D7B;
+       color: #272320;
+}
+
+/* Works in Safari */
+::selection {
+       background-color: #983D7B;
+       color: #272320;
+}
+
 *{
   font-family: 'Gothic A1', sans-serif;
   margin:0;
