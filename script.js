@@ -25,10 +25,9 @@ for(var i = 0; i<length; i++){
 container.style.left = document.getElementById("recursive-container").children[0].offsetWidth/2 + "px";
 
 container.style.transform = "translate(0,"+ document.getElementById("recursive-container").children[0].offsetHeight/2 + "px";
-+"px)";
 
 
-document.getElementById("recursive-wrapper").style.height = document.getElementById("recursive-container").children[0].offsetWidth+document.getElementById("recursive-container").children[0].offsetHeight/2 + "px";
+document.getElementById("recursive-wrapper").style.height = document.getElementById("recursive-container").children[0].offsetWidth + "px";
 
 document.getElementById("recursive-wrapper").style.width = document.getElementById("recursive-container").children[0].offsetWidth + "px";
 

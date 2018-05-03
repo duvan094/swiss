@@ -19,26 +19,45 @@ body{
   box-sizing:border-box;
   width:720px;
   margin:auto;
+  cursor:pointer;
 }
 
-.top-container{
+.bottom-container{
+  position: absolute;
+  bottom:0;
+  left:0;
   display:flex;
   width:100%;
   justify-content:space-between;
+  padding:44px 66px;
+  box-sizing: border-box;
 }
 
-.top-container .column{
+.bottom-container .column{
   color:#FFF;
-  width:200px;
+  margin:0 22px;
+  width:150px;
 }
 
-.top-container p{
+.bottom-container .column:first-child{
+  margin:0 22px 0 0;
+}
+
+.bottom-container .column:last-child{
+  margin:0 0 0 22px;
+}
+
+.bottom-container p{
   font-weight:300;
+  margin-bottom: 11px;
+  font-size: 12px;
+  text-transform: uppercase;
+
 }
 
 #recursive-wrapper{
   position:absolute;
-  bottom:44px;
+  top:66px;
 }
 
 #recursive-container{
@@ -48,9 +67,11 @@ body{
 .recursive-title{
   color:#983D7B;
   font-size:110px;
+  line-height: 110px;
   font-weight:900;
   position:absolute;
   top:0;
+  text-transform: lowercase;
   transform:rotate(0deg);
   white-space: nowrap;
   display:block;
@@ -64,4 +85,35 @@ body{
 .top-color{
   color:#b34891;
   z-index:1;
+}
+
+.interlude{
+  color:#E2AAC7;
+  position: absolute;
+  top:100%;
+  right:32px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+.outro{
+  color:#FFF;
+  position: fixed;
+  bottom:0;
+  left:0;
+  margin:44px;
+  font-size:18px;
+  font-weight:600;
+}
+
+.outro a{
+  color:#983D7B;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.outro a:hover{
+  opacity:0.8;
 }

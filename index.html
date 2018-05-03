@@ -6,8 +6,6 @@
     <meta name="keywords" content="Swiss design, Graphic design">
     <meta name="author" content="Jacob Duvander">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swiss Style with HTML & CSS</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,500" rel="stylesheet">
@@ -18,24 +16,33 @@
   </head>
   <body>
 
-    <button onclick="rotate()">Click</button>
-    <div id="poster" class="poster">
-      <div class="top-container">
-        <div class="column">
-          <h2>Title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptate sapiente tempora vel est natus.</p>
-        </div>
-        <div class="column">
-          <h2>Title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptate sapiente tempora vel est natus.</p>
-        </div>
-        </div>
+    <div id="poster" class="poster" onclick="rotate()">
       <div id=recursive-wrapper>
+        <div class="interlude">
+          the queen is dead
+        </div>
         <div id="recursive-container">
         </div>
       </div>
+      <div class="bottom-container">
+        <div class="column">
+          <p>Monday 13 October<br><b>Charlise Sands Centre</b></p>
+          <p>Tuesday 14 October<br><b>Wolverhampton Civic hall</b></p>
+          <p>Saturday 18 October<br><b>Gloucester Leiser Centre</b></p>
+        </div>
+        <div class="column">
+          <p>Sunday 19 October<br><b>Newport Centre</b></p>
+          <p>Tuesday 21 October<br><b>Nottingham Royal Centre</b></p>
+          <p>Thursday 23 October<br><b>National Ballroom Kilburn</b></p>
+        </div>
+        <div class="column">
+          <p>Sunday 26 October<br><b>London Palladium</b></p>
+          <p>Monday 27 October<br><b>Preston Guildhall</b></p>
+          <p>Thursday 29 October<br><b>Manchester Free Trade Hall</b></p>
+        </div>
+      </div>
     </div>
-
+    <p class="outro">back to <a href="https://jacobduvander.se">portfolio</a>.</p>
     <script type="text/javascript" src="script.js"></script>
 
   </body>
